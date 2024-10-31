@@ -1,3 +1,11 @@
+@font-face {
+    font-family: airport;
+    src: url(../font/Airport.ttf);
+}
+@font-face {
+    font-family: any;
+    src: url(../font/OKScU8ig.ttf);
+}
 body {
     margin: 0;
     padding: 0;
@@ -15,6 +23,29 @@ div {
     border-bottom: 2px solid #b9c6ff;
     padding: 10px;
     background-color: #d5f7ff;
+}
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.greeting {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.5rem; /* Увеличенный размер заголовка */
+    font-family: airport;
+}
+.contacts {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-family: any;
+}
+.contacts p {
+    margin: 2px;
 }
 .container {
     display: grid;
