@@ -1,0 +1,26 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to right, #d5f7ff, #b9c6ff);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+div {
+    box-sizing: border-box;
+}
+.header {
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    border-bottom: 2px solid #b9c6ff;
+    padding: 10px;
+    background-color: #d5f7ff;
+}
+.container {
+    display: grid;
+    grid-template-columns: 200px 1fr 200px 200px;
+    grid-template-rows: auto;
+    gap: 10px;
+    flex-grow: 1;
+    padding: 10px;
+}
