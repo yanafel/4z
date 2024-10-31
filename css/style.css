@@ -65,7 +65,9 @@ nav > ul {
     margin: 0;
 }
 nav > ul li {
-    display: block;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-family: any;
     border: 2px solid #b9c6ff;
     background: radial-gradient(#d5f7ff, #b9c6ff);
@@ -73,18 +75,11 @@ nav > ul li {
     height: 50px;
     font-size: 1.2rem;
     margin-bottom: 5px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0 1px;
+    text-align: center;
 }
 nav > ul li div {
     width: 90%;
     text-align: center;
-}
-nav > ul li div:hover {
-    cursor: pointer;
-    color: white;
 }
 .content {
     grid-column: 2;
@@ -100,6 +95,7 @@ nav > ul li div:hover {
     padding: 10px;
     font-family: any;
     background-color: #b9d1ff;
+    text-align: center;
 }
 .news {
     grid-column: 3;
@@ -112,4 +108,19 @@ footer {
     text-align: center;
     padding: 10px;
     background-color: #d5f7ff;
+}
+.image-gallery {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+}
+.image-gallery img {
+    width: 150px;
+    height: 100px;
+    transition: transform 0.3s, filter 0.3s;
+    border-radius: 5px;
+}
+.image-gallery img:hover {
+    transform: scale(1.1);
+    filter: brightness(1.2);
 }
